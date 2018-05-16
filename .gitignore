@@ -113,3 +113,6 @@ venv.bak/
 ### PipEnv ###
 Pipfile
 Pipfile.lock
+
+# Node
+node_modules/

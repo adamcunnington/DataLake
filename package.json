@@ -1,0 +1,47 @@
+{
+  "name": "datalake",
+  "version": "1.0.0",
+  "description": "\"# DataLake\"",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamcunnington/DataLake.git"
+  },
+  "keywords": [
+    "data",
+    "datalake"
+  ],
+  "author": "Dan Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamcunnington/DataLake/issues"
+  },
+  "homepage": "https://github.com/adamcunnington/DataLake#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "moment": "^2.22.1",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-datepicker": "^1.4.1",
+    "react-dom": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.2",
+    "webpack-merge": "^4.1.2"
+  }
+}

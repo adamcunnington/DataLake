@@ -1,0 +1,14 @@
+{% extends 'include/layout.html' %}
+
+{% block main %}
+    <div class="panel">
+        {{ tabs(selected='schedules') }}
+        <h3>Schedules</h3>
+        <a href="schedules/add">New schedule</a>
+        <div id="schedules"></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/public/schedules.js') }}"></script>
+{% endblock %}

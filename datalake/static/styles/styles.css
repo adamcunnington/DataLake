@@ -15,6 +15,23 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h5, h6 {
+    color: #aaa;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 header {
     height: 4em;
     background-color: #ed6b31;
@@ -32,6 +49,14 @@ header h1 {
     line-height: 3;
 }
 
+header a {
+    color: inherit;
+}
+
+header a:hover {
+    color: inherit;
+}
+
 main {
     max-width: 60em;
     margin: 0 auto;
@@ -42,10 +67,207 @@ footer {
     font-size: .8em;
 }
 
+input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+}
+
+input[type=checkbox]:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+input[type=checkbox]:disabled {
+    border-color: #e9ecee;
+    box-shadow: none;
+}
+
+input[type=checkbox]:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+
 .panel {
     background-color: #fff;
     margin: 1em 0;
     padding: 2em;
     border-radius: .5em;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .08);
+}
+
+.tabs {
+    margin: 0 0 1em;
+}
+
+.tab {
+    display: inline-block;
+    border-radius: .5em;
+}
+
+.tab a {
+    display: inline-block;
+    padding: .5em 1em;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.tab-selected {
+    background-color: #f6f6f6;
+}
+
+.monitoring-controls {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.monitoring-control-previous {
+    float: left;
+}
+
+.monitoring-control-next {
+    float: right;
+}
+
+.monitoring-controls-footer {
+    text-align: center;
+}
+
+.monitoring-table {
+    width: 100%;
+}
+
+.execution-cell {
+    display: inline-block;
+}
+
+.execution-partial {
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    padding: .2em 0;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+}
+
+.execution-success {
+    background-color: #548235;
+    color: #fff;
+}
+
+.execution-failure {
+    background-color: #9e323a;
+    color: #fff;
+}
+
+.execution-running {
+    background-color: #f9ae42;
+    color: #fff;
+}
+
+.execution-waiting {
+    color: #aaa;
+}
+
+.execution-selector {
+    margin-left: .2em;
+}
+
+.loading-message {
+    text-align: center;
+    color: #aaa;
+}
+
+.btn-retry {
+    float: right;
+}
+
+.btn-disabled {
+    opacity: .5;
+    cursor: default;
+}
+
+/* Schedules */
+
+.schedule-loading {
+    text-align: center;
+}
+
+.schedule-table {
+    width: 100%;
+}
+
+.schedule-link {
+    float: right;
+}
+
+.filter-menu {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: .5em;
+}
+
+/* Schedule (single) */
+
+.schedule-days {
+    border-top: 1px solid #eee;
+    width: 200px;
+}
+
+form .label-body {
+    vertical-align: text-bottom;
+}
+
+/* Adhoc */
+
+.acquire-form {
+    border-top: 1px solid #aaa;
+    padding: 1em 0 0;
+}
+
+.acquire-entry + .acquire-entry {
+    border-top: 1px solid #eee;
+    padding: 1em 0 0;
+}
+
+.acquire-entry label {
+    display: inline-block;
+    min-width: 8em;
+}
+
+.acquire-entry-remove {
+    float: right;
+}
+
+.extract-form {
+    border-top: 1px solid #aaa;
+    padding: 1em 0 0;
+}
+
+/* Interval Picker */
+
+.interval-picker-label {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.interval-picker-input {
+    width: 4em;
+    margin-right: .5em;
 }
