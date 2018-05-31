@@ -1,0 +1,10 @@
+
+.interval-picker-label {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.interval-picker-input {
+    width: 4em;
+    margin-right: .5em;
+}

@@ -1,0 +1,18 @@
+
+.monitor-controls-footer {
+    text-align: center;
+}
+
+.monitor-loading {
+    text-align: center;
+    color: #aaa;
+}
+
+.monitor-btn-retry {
+    float: right;
+}
+
+.monitor-btn-disabled {
+    opacity: .5;
+    cursor: default;
+}

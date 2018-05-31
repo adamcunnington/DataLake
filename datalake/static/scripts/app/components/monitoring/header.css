@@ -1,0 +1,28 @@
+
+.header {
+    vertical-align: top;
+}
+
+.header-contents {
+    display: inline-block;
+}
+
+.header-date {
+    display: block;
+    margin: 0;
+}
+
+.header-day {
+    display: block;
+    margin: 0;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.header-cell-highlight {
+    background-color: rgba(249, 174, 66, .15);
+    border-top: 1px solid rgba(249, 174, 66, .2);
+    border-left: 1px solid rgba(249, 174, 66, .2);
+    border-right: 1px solid rgba(249, 174, 66, .3);
+}

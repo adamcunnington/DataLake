@@ -1,0 +1,13 @@
+{% extends 'include/layout.html' %}
+
+{% block main %}
+    <div class="panel">
+        {{ tabs(selected='monitoring') }}
+        <h3>Monitoring</h3>
+        <div id="monitoring"></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/public/monitoring.js') }}"></script>
+{% endblock %}

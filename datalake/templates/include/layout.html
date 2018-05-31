@@ -1,3 +1,17 @@
+{% macro tabs(selected='') -%}
+    <div class="tabs">
+        <span class="{{ 'tab tab-selected' if selected == 'monitoring' else 'tab' }}">
+            <a href="/monitoring">Monitoring</a>
+        </span>
+        <span class="{{ 'tab tab-selected' if selected == 'schedules' else 'tab' }}">
+            <a href="/schedules">Schedules</a>
+        </span>
+        <span class="{{ 'tab tab-selected' if selected == 'adhoc' else 'tab' }}">
+            <a href="/adhoc">Ad Hoc</a>
+        </span>
+    </div>
+{%- endmacro %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,18 +20,27 @@
 
         <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}" />
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/skeleton.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" />
 
         <title>Data Lake</title>
         {% endblock %}
+
+        <script type="text/javascript">
+            var authorisation = { accessToken: '{{ access_token }}' };
+        </script>
+
     </head>
     <body>
 
         <header>
             <section>
-                <h1>{% block heading %}Data Lake{% endblock %}</h1>
+                <h1>
+                    <a href="/" title="Data Lake">{% block heading %}Data Lake{% endblock %}</a>
+                </h1>
             </section>
         </header>
 
@@ -29,6 +52,6 @@
             Created by Dan Jones for Wavemaker UK
         </footer>
 
-        <script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+        {% block scripts %}{% endblock %}
     </body>
 </html>

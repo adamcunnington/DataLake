@@ -1,0 +1,37 @@
+
+.execution-cell {
+    display: inline-block;
+}
+
+.execution-partial {
+    display: inline-block;
+    height: 1em;
+    width: 2em;
+    padding: .2em 0;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+}
+
+.execution-success {
+    background-color: #548235;
+    color: #fff;
+}
+
+.execution-failure {
+    background-color: #9e323a;
+    color: #fff;
+}
+
+.execution-running {
+    background-color: #f9ae42;
+    color: #fff;
+}
+
+.execution-waiting {
+    color: #aaa;
+}
+
+.execution-selector {
+    margin-left: .7em;
+}

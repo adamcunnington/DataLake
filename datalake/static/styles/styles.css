@@ -1,5 +1,5 @@
 
-/* Basic Wavemaker style properties */
+/* Base Styles */
 
 html {
     font-family: "Calibri light";
@@ -13,6 +13,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+}
+
+h5, h6 {
+    color: #aaa;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 header {
@@ -32,6 +49,14 @@ header h1 {
     line-height: 3;
 }
 
+header a {
+    color: inherit;
+}
+
+header a:hover {
+    color: inherit;
+}
+
 main {
     max-width: 60em;
     margin: 0 auto;
@@ -42,10 +67,116 @@ footer {
     font-size: .8em;
 }
 
+input[type=checkbox] {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+}
+
+input[type=checkbox]:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+input[type=checkbox]:disabled {
+    border-color: #e9ecee;
+    box-shadow: none;
+}
+
+input[type=checkbox]:checked:after {
+    content: "\f00c";
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #548235;
+}
+
+input[type=checkbox]:disabled:after {
+    color: rgba(84, 130, 53, .5);
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+}
+
+input[type=text]:disabled {
+    border-color: #e9ecee;
+    background-color: #fafafa;
+}
+
+th, td {
+    padding: 13px;
+}
+
 .panel {
     background-color: #fff;
     margin: 1em 0;
     padding: 2em;
     border-radius: .5em;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .08);
+}
+
+.tabs {
+    margin: 0 0 1em;
+}
+
+.tab {
+    display: inline-block;
+    border-radius: .5em;
+    transition: background-color .2s;
+}
+
+.tab:not(.tab-selected):hover {
+    background-color: #fcfcfc;
+}
+
+.tab a {
+    display: inline-block;
+    padding: .5em 1em;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.tab-selected {
+    background-color: #f6f6f6;
+}
+
+.controls {
+    margin: 1em 0;
+}
+
+form .label-body {
+    vertical-align: text-bottom;
+}
+
+.form-section {
+    border-top: 2px solid #f0f0f0;
+    padding: 1em 0 0;
+}
+
+.btn-new-schedule {
+    float: right;
+}
+
+
+/* React Datepicker overrides */
+
+.react-datepicker__navigation {
+    height: initial;
+    margin-bottom: 0;
+}
+
+.react-datepicker__navigation:hover {
+    border-color: transparent;
 }

@@ -1,0 +1,15 @@
+
+.schedule-days .schedule-days-label {
+    display: inline-block;
+    width: 3.2em;
+}
+
+.schedule-days .schedule-days-input {
+    display: block;
+    margin: 0 auto;
+}
+
+.schedule-days .schedule-days-text {
+    text-align: center;
+    display: block;
+}
