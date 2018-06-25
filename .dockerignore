@@ -1,0 +1,8 @@
+.venv
+docs
+node_modules
+tests
+webpack
+*.egg-info
+titan/templates
+titan/static

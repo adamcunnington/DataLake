@@ -1,0 +1,71 @@
+
+.monitoring-client {
+    font-size: 12px;
+}
+
+.monitoring-client-title {
+    margin: 0;
+    padding: 1em 0 .2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1f4e79;
+    font-weight: bold;
+}
+
+.monitoring-datasource {
+    font-size: 12px;
+    margin-left: 2em;
+}
+
+.monitoring-datasource-title {
+    margin: 0;
+    padding: 1em 0 .2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #5ba0b5;
+    font-weight: bold;
+}
+
+.monitoring-dataset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 12px;
+    margin-left: 2em;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.monitoring-dataset-label {
+    max-width: 250px;
+    align-self: center;
+    vertical-align: text-bottom;
+}
+
+.monitoring-title-highlight {
+    position: relative;
+}
+
+.monitoring-title-highlight:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10.5rem;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(249, 174, 66, .15);
+    border-left: 1px solid rgba(249, 174, 66, .2);
+    border-right: 1px solid rgba(249, 174, 66, .2);
+}
+
+@media (max-width: 960px) {
+    .monitoring-dataset-label {
+        width: 150px;
+        height: 40px;
+        overflow: hidden;
+    }
+    .monitoring-title-highlight:after {
+        width: 9rem;
+    }
+}

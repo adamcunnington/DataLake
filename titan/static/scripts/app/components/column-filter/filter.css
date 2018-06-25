@@ -1,0 +1,133 @@
+
+.column-filter {
+    display: inline-block;
+    min-width: 46px;
+}
+
+.filter-button {
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 .8em;
+    padding: 0 .4em;
+    background-color: #fff;
+    color: #aaa;
+}
+
+.filter-button-open {
+    z-index: 1000;
+}
+
+.filter-button-open,
+.filter-button-open:focus {
+    background-color: #5ba0b5;
+    color: #fff;
+    border-color: #5ba0b5;
+}
+
+.filter-icon-sub {
+    font-size: 65%;
+}
+
+.filter-menu {
+    position: absolute;
+    z-index: 1000;
+    width: 200px;
+    margin-top: .8em;
+    background: #fff;
+    border-radius: .2em;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+}
+
+.filter-menu-controls {
+    font-weight: normal;
+    font-size: 12px;
+    padding: .5em 1em;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.filter-menu-link-disabled,
+.filter-menu-link-disabled:hover {
+    color: #aaa;
+    cursor: default;
+}
+
+.filter-menu-icon  {
+    margin-right: .3em;
+}
+
+.filter-menu-options {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.filter-menu-row {
+    position: relative;
+}
+
+.filter-menu-row input[type=checkbox] {
+    position: absolute;
+    left: .7em;
+    top: .65em;
+}
+
+.filter-menu-row label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: .6em .6em .6em 2.6em;
+    cursor: pointer;
+    font-weight: normal;
+    color: #888;
+}
+
+.filter-menu-row label:hover {
+    background-color: rgba(91, 160, 181, .1);
+}
+
+.filter-menu-row.filter-menu-row-selected label {
+    color: inherit;
+}
+
+.filter-cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+}
+
+.filter-cover-open {
+    display: block;
+}
+
+/* Flag-specific problems */
+
+.filter-menu-flag ::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Date-specific properties */
+
+.filter-controls-date {
+    background-color: #f0f0f0;
+    border-bottom: none;
+}
+
+.filter-menu-date {
+    width: initial;
+}
+
+.react-datepicker.filter-menu-datepicker {
+    border: none;
+}
+
+.filter-menu-date ::-webkit-scrollbar {
+    width: 0;
+}

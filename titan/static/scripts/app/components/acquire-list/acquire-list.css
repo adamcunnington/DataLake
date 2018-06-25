@@ -1,0 +1,23 @@
+
+.acquire-list {
+    padding: 0 0 1em;
+}
+
+.acquire-item + .acquire-item {
+    border-top: 1px solid #eee;
+    padding: 1em 0 0;
+}
+
+.acquire-item label {
+    display: inline-block;
+    min-width: 210px;
+}
+
+.acquire-item-remove {
+    float: right;
+}
+
+.acquire-properties {
+    float: left;
+    margin-right: 2em;
+}

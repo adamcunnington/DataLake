@@ -1,0 +1,14 @@
+
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    padding: .5em;
+    background-color: #fff;
+    border-radius: .3em .3em 0 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .08);
+}
+
+.scroll-to-top-icon {
+    margin-right: .3em;
+}

@@ -1,0 +1,40 @@
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-label {
+    display: inline-block;
+    width: 10.5rem;
+    box-sizing: border-box;
+    padding: .4em;
+    font-size: 100%;
+}
+
+.header-date {
+    display: block;
+    margin: 0;
+}
+
+.header-day {
+    display: block;
+    margin: 0;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.header-highlight {
+    background-color: rgba(249, 174, 66, .15);
+    border-top: 1px solid rgba(249, 174, 66, .2);
+    border-left: 1px solid rgba(249, 174, 66, .2);
+    border-right: 1px solid rgba(249, 174, 66, .2);
+}
+
+@media (max-width: 960px) {
+    .header-label {
+        width: 9rem;
+        font-size: 80%;
+    }
+}

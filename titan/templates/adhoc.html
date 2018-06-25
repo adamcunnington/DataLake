@@ -1,0 +1,17 @@
+{% extends 'include/layout.html' %}
+
+{% block main %}
+    <div class="panel">
+        {{ tabs(selected='adhoc') }}
+        <h3>Ad Hoc</h3>
+        <p>Trigger an ad hoc execution of a program</p>
+        <div id="adhoc"></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        var data = {{ data }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/public/adhoc.js') }}"></script>
+{% endblock %}

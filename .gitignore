@@ -107,9 +107,17 @@ venv.bak/
 
 --- Below is Custom ---
 
+### Application-Specific ###
+config.env
+
 ### PyCharm ###
 .idea/*
 
 ### PipEnv ###
 Pipfile
-Pipfile.lock
+
+### Node ###
+node_modules/
+
+### Public JS ###
+titan/static/scripts/public/

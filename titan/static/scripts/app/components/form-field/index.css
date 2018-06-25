@@ -1,0 +1,11 @@
+
+input.input-error {
+    border-color: rgba(158, 50, 58, .2);
+    background-color: rgba(158, 50, 58, .1);
+}
+
+.input-error-message {
+    margin: 0;
+    color: rgba(158, 50, 58, .8);
+    font-size: 12px;
+}

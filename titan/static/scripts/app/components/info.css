@@ -1,0 +1,23 @@
+
+.info-wrap {
+    position: relative;
+}
+
+.info-icon {
+    color: #5ba0b5;
+}
+
+.info-tooltip {
+    position: absolute;
+    left: 30px;
+    top: -7px;
+    z-index: 200;
+    width: 190px;
+    padding: .2em .8em;
+    background: #3d413d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid #275950;
+    border-radius: .2em;
+}
