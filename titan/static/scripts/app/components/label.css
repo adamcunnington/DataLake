@@ -1,0 +1,11 @@
+
+.label-required {
+    margin-left: .5em;
+    vertical-align: super;
+    color: #9e323a;
+    font-size: 50%;
+}
+
+.label-tooltip-icon {
+    margin-left: .5em;
+}

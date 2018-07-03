@@ -1,0 +1,33 @@
+
+.tooltip {
+    position: absolute;
+    z-index: 200;
+    width: 290px;
+    padding: .2em .8em;
+    background: #3d413d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid #275950;
+    border-radius: .2em;
+}
+
+.tooltip p {
+    margin: .5em 0;
+}
+
+.tooltip label {
+    font-size: 12px;
+    display: inline;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.tooltip-error {
+    color: #d54c61;
+}
+
+.tooltip-error-icon {
+    color: #d54c61;
+    margin-right: 5px;
+}

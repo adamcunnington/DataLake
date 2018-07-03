@@ -1,2 +1,0 @@
-
-/* Blank JavaScript file */

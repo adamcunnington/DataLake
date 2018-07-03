@@ -1,0 +1,43 @@
+-i https://pypi.org/simple
+-e .
+adal==1.0.1
+applicationinsights==0.11.4
+asn1crypto==0.24.0
+azure-common==1.1.12
+azure-mgmt-containerinstance==0.4.0
+azure-mgmt-nspkg==2.0.0
+azure-mgmt-resource==1.2.2
+azure-nspkg==2.0.0
+azure-storage-blob==1.1.0
+azure-storage-common==1.1.0
+azure-storage-nspkg==3.0.0
+certifi==2018.4.16
+cffi==1.11.5; platform_python_implementation != 'pypy'
+chardet==3.0.4
+click==6.7
+cryptography==2.2.2
+entrypoints==0.2.3
+flask-sqlalchemy==2.3.2
+flask==1.0.2
+idna==2.7
+isodate==0.6.0
+itsdangerous==0.24
+jinja2==2.10
+keyring==13.0.0
+markupsafe==1.0
+msrest==0.5.0
+msrestazure==0.4.32
+oauthlib==2.1.0
+pycparser==2.18
+pyjwt==1.6.4
+pyodbc==4.0.23
+python-dateutil==2.7.3
+python-dotenv==0.8.2
+pywin32-ctypes==0.1.2; sys_platform == 'win32'
+requests-oauthlib==1.0.0
+requests==2.19.1
+six==1.11.0
+sqlalchemy==1.2.8
+urllib3==1.23
+werkzeug==0.14.1
+wrapt==1.10.11

@@ -1,0 +1,56 @@
+
+.execution label {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.acquire-details {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.acquire-details + .acquire-details {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+}
+
+.acquire-info {
+    width: 320px;
+}
+
+.acquire-options {
+    display: flex;
+}
+
+.acquire-options-toggle-wrap {
+    margin-right: 10px;
+}
+
+.extract-details {
+    display: flex;
+}
+
+.extract-info {
+    width: 320px;
+}
+
+.extract-options {
+    display: flex;
+}
+
+.extract-options-toggle-wrap {
+    margin-right: 10px;
+}
+
+.execution-option-label {
+    width: 180px;
+}
+
+.task-status {
+    font-weight: bold;
+}
+
+.task-status-icon {
+    margin-right: 5px;
+}

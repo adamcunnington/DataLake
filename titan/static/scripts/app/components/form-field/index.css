@@ -1,0 +1,32 @@
+
+input.input-error {
+    border-color: rgba(158, 50, 58, .2);
+    background-color: rgba(158, 50, 58, .1);
+}
+
+.input-error-message {
+    margin: 0;
+    color: rgba(158, 50, 58, .8);
+    font-size: 12px;
+}
+
+.form-row-compact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.form-row-compact input {
+    margin: 0;
+}
+
+.form-row-compact label {
+    display: inline-block;
+    min-width: 210px;
+}
+
+.form-row-compact .input-error-message {
+    order: 1;
+    margin-left: 15px;
+}
