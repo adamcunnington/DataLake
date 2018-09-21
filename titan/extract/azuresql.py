@@ -25,22 +25,7 @@ def _generate_sql_text(blobs, replace, credential_name, blob_key, data_source_na
     # of. If they wanted to do harm, they could do it anyway.
     # We also have to create a 'temporary' (create before and delete after) view that sits on top of the underlying
     # table because the source won't contain the extract key.
-    pre_text = f"""
-        IF EXISTS(SELECT * FROM sys.external_data_sources WHERE name = N'{data_source_name}')
-            DROP EXTERNAL DATA SOURCE [{data_source_name}];
-            
-        IF EXISTS(SELECT * FROM sys.database_credentials WHERE name = N'{credential_name}')
-            DROP DATABASE SCOPED CREDENTIAL [{credential_name}];
-        
-        CREATE DATABASE SCOPED CREDENTIAL [{credential_name}]
-        WITH IDENTITY = 'SHARED ACCESS SIGNATURE', SECRET = N'{blob_key}';
-        
-        CREATE EXTERNAL DATA SOURCE [{data_source_name}]
-        WITH (
-            TYPE = BLOB_STORAGE,
-            LOCATION = N'{blob_location}',
-            CREDENTIAL = [{credential_name}]
-        );"""
+    pre_text = f""""""
 
     main_text = f"""    
         BEGIN TRANSACTION
